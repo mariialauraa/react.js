@@ -12,6 +12,10 @@ import PaiFunction from './components/PaiFunction'
 import Form from './components/Form'
 import RenderCondicional from './components/RenderCondicional'
 import LoginButton from './components/LoginButton'
+import Warning from './components/Warning'
+import NumberList from './components/NumberList'
+import BotaoEstilizado from './components/BotaoEstilizado'
+import BotaoAzul from './components/BotaoAzul'
 
 function App() {
   return (
@@ -42,6 +46,15 @@ function App() {
       {/* 1.12 Expressão ternária */}
       <LoginButton loggedIn={false} />
       <LoginButton loggedIn={true} />
+      {/* 1.13 Render nulo */}
+      <Warning warning={null}/>
+      <Warning warning="Temos um warning"/>
+      {/* 1.14 Listas Chaves */}
+      <NumberList numbers={[1, 2, 3, 4, 5]}/>
+      {/* 1.15 Estilos por atributo */}
+      <BotaoEstilizado />
+      {/* 1.16 Estilos globais */}
+      <BotaoAzul />
     </>
   )
 }
