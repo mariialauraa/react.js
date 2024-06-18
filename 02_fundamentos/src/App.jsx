@@ -16,6 +16,7 @@ import Warning from './components/Warning'
 import NumberList from './components/NumberList'
 import BotaoEstilizado from './components/BotaoEstilizado'
 import BotaoAzul from './components/BotaoAzul'
+import Exercises from './components/Exercises'
 
 function App() {
   return (
@@ -55,6 +56,8 @@ function App() {
       <BotaoEstilizado />
       {/* 1.16 Estilos globais */}
       <BotaoAzul />
+      {/* 1.17 Exercícios */}
+      <Exercises />
     </>
   )
 }
