@@ -5,6 +5,7 @@ import ComponenteFilho from './components/ComponenteFilho'
 import { MeuContextoProvider } from './contexts/MeuContexto'
 import ValorDoContexto from './components/ValorDoContexto'
 import Contador from './components/Contador'
+import DisplayWindowSize from './components/DisplayWindowSize'
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
     {/* 2.3 useReducer */}
     {/* estudos mais complexos */}
     <Contador />
-
+    {/* 2.4 Custom hook */}
+    <DisplayWindowSize />
+    {/* Slots e children props */}
     </>
   )
 }
