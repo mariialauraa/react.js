@@ -4,6 +4,7 @@ import Timer from './components/Timer'
 import ComponenteFilho from './components/ComponenteFilho'
 import { MeuContextoProvider } from './contexts/MeuContexto'
 import ValorDoContexto from './components/ValorDoContexto'
+import Contador from './components/Contador'
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
       <ComponenteFilho /> 
       <ValorDoContexto />
     </MeuContextoProvider>
+    {/* 2.3 useReducer */}
+    {/* estudos mais complexos */}
+    <Contador />
+
     </>
   )
 }
