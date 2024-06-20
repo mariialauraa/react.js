@@ -6,6 +6,9 @@ import { MeuContextoProvider } from './contexts/MeuContexto'
 import ValorDoContexto from './components/ValorDoContexto'
 import Contador from './components/Contador'
 import DisplayWindowSize from './components/DisplayWindowSize'
+import Container from './components/Container'
+import PerfilDeUsuario from './components/PerfilDeUsuario'
+
 
 function App() {
   return (
@@ -25,7 +28,16 @@ function App() {
     <Contador />
     {/* 2.4 Custom hook */}
     <DisplayWindowSize />
-    {/* Slots e children props */}
+    {/* 2.5 Slots e children props */}
+    <Container>
+      <h1>Título da seção</h1>
+      <p>Este é o meu subtítulo</p>
+      <Contador />
+    </Container>
+    {/* 2.6 Sicronizar o estado com props */}
+    {/* prop => componente => chamada API => resulta em um dado */}
+    <PerfilDeUsuario usuarioId={1}/>
+    <PerfilDeUsuario usuarioId={2}/>
     </>
   )
 }
