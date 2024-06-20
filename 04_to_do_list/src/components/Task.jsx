@@ -1,9 +1,9 @@
 // Card da Tarefa
-const Task = () => {
+const Task = ({ task, onDelete }) => {
   return (
     <li>
-        <span>Texto da Tarefa</span>
-        <button>Remove</button>
+        <span>{task.text}</span>
+        <button onClick={onDelete}>Remove</button>
     </li>
   )
 }
