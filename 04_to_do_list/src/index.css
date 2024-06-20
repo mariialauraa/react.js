@@ -35,6 +35,10 @@ li {
   align-items: center;
 }
 
+li span {
+  cursor: pointer;
+}
+
 button {
   background-color: #5cb85c;
   color: white;

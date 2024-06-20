@@ -1,7 +1,11 @@
 // Lista de Tarefas
 import Task from "./Task"
 
-const TaskList = ({ tasks, onDeleteTask }) => {
+const TaskList = ({ tasks, onDeleteTask, onToggleTaskDone }) => {
+
+    if (tasks.length === 0) {
+        return <p>Não há tarefas cadastradas!</p>
+    }
     
   return (
     <ul>
@@ -10,6 +14,7 @@ const TaskList = ({ tasks, onDeleteTask }) => {
                 key={task.id} 
                 task={task} 
                 onDelete={() => onDeleteTask(task.id)} 
+                onToggleDone={() => onToggleTaskDone(task.id)}
             />
         ))}
     </ul>
