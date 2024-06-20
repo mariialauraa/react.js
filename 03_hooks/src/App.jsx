@@ -10,6 +10,7 @@ import Container from './components/Container'
 import PerfilDeUsuario from './components/PerfilDeUsuario'
 import CalculoPesado from './components/CalculoPesado'
 import ContadorCallback from './components/ContadorCallback'
+import Exercises from './components/Exercises'
 
 
 function App() {
@@ -53,6 +54,9 @@ function App() {
 
     {/* useCallback */}
     <ContadorCallback />
+
+    {/* 2.8 Exercicios */}
+    <Exercises />
     </>
   )
 }
