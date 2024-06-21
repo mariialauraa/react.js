@@ -5,6 +5,7 @@ import FetchPosts from './components/FetchPosts'
 import AxiosPosts from './components/AxiosPosts'
 import PostManager from './components/PostManager'
 import PostLoader from './components/PostLoader'
+import PostViewer from './components/PostViewer'
 
 function App() {
 
@@ -27,6 +28,10 @@ function App() {
     <div>
       <Link to="/post/999">Carregar Post 999</Link>
     </div>
+    {/* 4 - Custom hook com API */}
+    <div>
+      <Link to="/post/view/2">Carregar Post 2</Link>
+    </div>
     <Routes>
       {/* 1 - GET com Fetch e Axios */}
       <Route path="/fetch-posts" element={<FetchPosts />} />
@@ -35,6 +40,8 @@ function App() {
       <Route path="/posts" element={<PostManager />} />
       {/* 3 - Tratamentos de erros */}
       <Route path="/post/:postId" element={<PostLoader />} />
+      {/* 4 - Custom hook com API */}
+      <Route path="/post/view/:postId" element={<PostViewer />} />
     </Routes>
     </>
   )
