@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import axios from 'axios'
 
 const AxiosPosts = () => {
-    const [posts, setPots] = useState([]) 
+    const [posts, setPosts] = useState([]) 
     const [error, setError] = useState("") 
 
     useEffect(() => {
@@ -11,7 +11,7 @@ const AxiosPosts = () => {
                 const response = await axios.get(
                     "https://jsonplaceholder.typicode.com/posts"
                 )
-                setPots(response.data)
+                setPosts(response.data)
 
             } catch (error) {
                setError(error.message) 
